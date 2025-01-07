@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qr_jmf)y$*x31ku)wy1wg*l(x*l8=i@q#(u7eae=^tjif-0#qy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = https://slickback101.github.io/Interactive-Quiz-Application 
+ALLOWED_HOSTS = ['slickback101.github.io']
 
 
 # Application definition
