@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -123,3 +124,11 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Base Directory
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Static Files Settings
+STATIC_URL = '/static/'  # URL to access static files
+STATICFILES_DIRS = [BASE_DIR / 'static']  # Directory for your static files
+STATIC_ROOT = BASE_DIR / 'staticfiles'  # Directory where collected static files will be stored

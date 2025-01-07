@@ -1,0 +1,6 @@
+<h1>Welcome to the Quiz App</h1>
+{% for quiz in quizzes %}
+  <h2>{{ quiz.title }}</h2>
+  <p>{{ quiz.description }}</p>
+  <a href="{% url 'take_quiz' quiz.id %}">Take Quiz</a>
+{% endfor %}
